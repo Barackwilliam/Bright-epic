@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bright Epic International | Chemical Supply & Trading — Dar es Salaam</title>
+<meta name="description" content="Bright Epic International — trusted chemical supplier in Dar es Salaam, Tanzania. Caustic Soda, Aluminium Sulphate, Nitric Acid, Hydrochloric Acid & Calcium Hypochlorite.">
+<meta property="og:title" content="Bright Epic International | Chemical Supply & Trading">
+<meta property="og:description" content="Trusted chemical supplier in Dar es Salaam, Tanzania. Quality-assured industrial chemicals for water treatment, manufacturing, and processing.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://brightepic.co.tz/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=1200&q=80">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='50' fill='%23b7f34a'/%3E%3Ctext x='50' y='62' font-family='Georgia,serif' font-size='42' font-weight='bold' fill='%2306223a' text-anchor='middle'%3EBE%3C/text%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+  :root{
+    --bg:#eef6fa;
+    --bg-2:#ffffff;
+    --card:#ffffff;
+    --ink:#0b1b2b;
+    --ink-2:#33485c;
+    --muted:#5b6b7a;
+    --line:#dbe6ee;
+    --green:#0a3556;
+    --green-light:#14b8a6;
+    --accent:#b7f34a;
+    --accent-light:#d6f98c;
+    --navy:#06223a;
+    --deep:#0a3556;
+    --teal:#14b8a6;
+    --lime:#b7f34a;
+    --ice:#eef6fa;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth; overflow-x: hidden;}
+  body{font-family:'Manrope',sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;overflow-x:hidden;font-size:16px; width: 100%;}
+  h1,h2,h3,h4{font-family:'Fraunces',serif;line-height:1.15;font-weight:600;letter-spacing:-.02em;color:var(--ink);}
+  a{text-decoration:none;color:inherit;}
+  img{max-width:100%;display:block;}
+  button{font-family:inherit;cursor:pointer;border:none;background:none;}
+
+  /* ============ NAV ============ */
+  header{position:fixed;top:0;left:0;right:0;z-index:1000;background:var(--navy);border-bottom:1px solid rgba(255,255,255,.08); width: 100%; height: 80px; display: flex; align-items: center; transition: background 0.3s;}
+  .nav{max-width:1240px;margin:0 auto;padding:0 28px;display:flex;align-items:center;justify-content:space-between;gap:24px; width: 100%;}
+  .brand{display:flex;align-items:center;gap:12px;cursor:pointer;}
+  .brand-mark{width:44px;height:44px;border-radius:50%;background:var(--lime);color:var(--navy);display:grid;place-items:center;font-family:'Fraunces',serif;font-weight:700;font-size:1.1rem;letter-spacing:-.5px;}
+  .brand-name{font-family:'Fraunces',serif;font-weight:700;font-size:1.15rem;line-height:1;color:#ffffff;}
+  .brand-name span{color:var(--lime);}
+  .brand-name small{display:block;font-family:'Manrope',sans-serif;font-size:.65rem;letter-spacing:2.5px;color:#9fb6c7;text-transform:uppercase;font-weight:600;margin-top:4px;}
+  .nav ul{display:flex;gap:6px;list-style:none;align-items:center;}
+  .nav ul a{padding:10px 16px;border-radius:100px;font-weight:600;font-size:.92rem;color:#d5e4ee;transition:.25s;}
+  .nav ul a:hover{background:rgba(255,255,255,.08);color:var(--lime);}
+  .nav-cta{background:var(--lime);color:var(--navy)!important;padding:11px 22px!important;border-radius:100px!important;font-weight:700!important;display:inline-flex;align-items:center;gap:8px;transition:.3s!important;}
+  .nav-cta:hover{background:var(--accent-light)!important;transform:translateY(-2px);}
+  .burger{display:none;font-size:1.5rem;color:#ffffff;padding:8px; z-index: 1001;}
+
+  /* ============ PAGE SYSTEM ============ */
+  .page{display:none; padding-top: 80px;}
+  .page.active{display:block; animation:fadeSlide 0.4s ease-out;}
+  @keyframes fadeSlide{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);}}
+
+  /* ============ HERO ============ */
+  .hero{padding:60px 28px 80px;position:relative;background:linear-gradient(135deg,var(--navy),var(--deep));color:#ffffff; width: 100%;}
+  .hero-inner{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:center;}
+  .hero-kicker{display:inline-flex;align-items:center;gap:10px;font-size:.78rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--lime);margin-bottom:24px;}
+  .hero-kicker::before{content:'';width:32px;height:1px;background:var(--lime);}
+  .hero h1{font-size:clamp(2.4rem,5.5vw,4.6rem);font-weight:700;margin-bottom:26px;line-height:1.1;color:#ffffff; min-height: 3.3em;}
+  .hero h1 em{font-style:italic;font-weight:400;color:var(--lime);}
+  .cursor{display:inline-block;width:3px;background-color:var(--lime);margin-left:5px;animation:blink 1s step-end infinite; vertical-align: bottom;}
+  @keyframes blink{0%,100%{opacity:1;}50%{opacity:0;}}
+  .hero p{color:#cfe0ec;font-size:1.1rem;max-width:520px;margin-bottom:36px;line-height:1.65;}
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:50px;}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:16px 30px;border-radius:100px;font-weight:700;font-size:.95rem;transition:.3s;border:2px solid transparent;cursor:pointer;}
+  .btn-primary{background:var(--lime);color:var(--navy);}
+  .btn-primary:hover{background:var(--accent-light);transform:translateY(-3px);box-shadow:0 12px 28px rgba(183,243,74,.35);}
+  .btn-ghost{border-color:rgba(255,255,255,.35);color:#ffffff;background:transparent;}
+  .btn-ghost:hover{border-color:var(--lime);color:var(--lime);}
+  .hero-meta{display:flex;gap:44px;padding-top:30px;border-top:1px solid rgba(255,255,255,.15);}
+  .hmeta strong{font-family:'Fraunces',serif;font-size:1.9rem;color:var(--lime);display:block;line-height:1;margin-bottom:6px;font-weight:700;}
+  .hmeta span{font-size:.78rem;color:#9fb6c7;text-transform:uppercase;letter-spacing:1.4px;font-weight:600;}
+
+  .hero-visual{position:relative;}
+  .hero-img{border-radius:200px 200px 20px 20px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 30px 60px rgba(0,0,0,.35);}
+  .hero-img img{width:100%;height:100%;object-fit:cover;}
+  .hero-deco{position:absolute;top:-30px;right:-30px;width:140px;height:140px;border-radius:50%;border:2px dashed var(--teal);animation:spin 30s linear infinite;z-index:-1;}
+  @keyframes spin{to{transform:rotate(360deg);}}
+  .hero-badge{position:absolute;bottom:30px;left:-20px;background:#ffffff;padding:16px 22px;border-radius:16px;box-shadow:0 20px 40px rgba(0,0,0,.25);display:flex;align-items:center;gap:14px;}
+  .hero-badge i{color:var(--teal);font-size:1.4rem;}
+  .hero-badge b{display:block;font-family:'Fraunces',serif;font-size:1rem;color:var(--navy);}
+  .hero-badge small{color:var(--muted);font-size:.78rem;}
+
+  /* ============ VISUAL SECTIONS ============ */
+  .visual-banners{display:grid;grid-template-columns:1fr 1fr;gap:0; width: 100%;}
+  .vb-panel{position:relative;min-height:500px;display:flex;align-items:center;padding:60px 40px;background-size:cover;background-position:center;color:#fff;overflow:hidden;}
+  .vb-panel::before{content:'';position:absolute;inset:0;background:linear-gradient(to top, rgba(6,34,58,0.95), rgba(6,34,58,0.3));z-index:1;}
+  .vb-content{position:relative;z-index:2;max-width:500px;width: 100%;}
+  .vb-content h2{color:#fff;font-size:clamp(2rem,3.5vw,2.8rem);margin-bottom:16px;line-height:1.1;}
+  .vb-content p{color:#e2e8f0;font-size:1.05rem;margin-bottom:30px;line-height:1.6;}
+  .vb-btns{display:flex;gap:12px;flex-wrap:wrap;}
+  .vb-btn-orange{background:#f97316;color:#fff;padding:14px 24px;font-weight:700;font-size:.9rem;border-radius:4px;transition:.3s;text-transform:uppercase;letter-spacing:0.5px; text-align:center;cursor:pointer;display:inline-block;}
+  .vb-btn-orange:hover{background:#ea580c;}
+  .vb-btn-light{background:#f1f5f9;color:var(--navy);padding:14px 24px;font-weight:700;font-size:.9rem;border-radius:4px;transition:.3s;text-transform:uppercase;letter-spacing:0.5px; text-align:center;cursor:pointer;display:inline-block;}
+  .vb-btn-light:hover{background:#e2e8f0;}
+
+  /* ============ SERVICES SECTION ============ */
+  .services-section{background:#fff;padding:90px 28px; width: 100%;}
+  .services-inner{max-width:1000px;margin:0 auto;}
+  .services-header{margin-bottom:50px;}
+  .services-kicker{color:#f97316;font-size:.85rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:10px;display:block;}
+  .services-header h2{font-size:clamp(2rem,4vw,3rem);color:var(--navy);margin-bottom:24px;line-height:1.1;}
+  .services-header p{color:var(--muted);font-size:1.1rem;line-height:1.7;max-width:800px;}
+  .service-block{margin-bottom:60px;}
+  .service-block img{width:100%;height:auto;border-radius:8px;margin-bottom:30px;box-shadow:0 10px 30px rgba(0,0,0,0.08);}
+  .service-block h3{font-size:1.6rem;color:var(--navy);margin-bottom:16px;}
+  .service-block p{color:var(--muted);font-size:1.05rem;line-height:1.7;}
+
+  /* ============ SECTION HEADERS ============ */
+  section{padding:80px 28px;}
+  .container{max-width:1240px;margin:0 auto;}
+  .sec-head{text-align:center;max-width:720px;margin:0 auto 54px;}
+  .sec-kicker{font-size:.78rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--teal);margin-bottom:16px;display:inline-block;}
+  .sec-head h2{font-size:clamp(1.9rem,4.2vw,3rem);font-weight:700;margin-bottom:16px;}
+  .sec-head h2 em{font-style:italic;font-weight:400;color:var(--teal);}
+  .sec-head p{color:var(--muted);font-size:1.02rem;max-width:560px;margin:0 auto;}
+
+  /* ============ PRODUCTS GRID ============ */
+  .products{background:var(--bg-2);}
+  .product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+  .product-card{background:var(--card);border-radius:22px;overflow:hidden;cursor:pointer;transition:.4s cubic-bezier(.2,.7,.3,1);position:relative;display:flex;flex-direction:column;box-shadow:0 4px 20px rgba(6,34,58,.06);border:1px solid var(--line);}
+  .product-card:hover{transform:translateY(-8px);box-shadow:0 24px 50px rgba(6,34,58,.18);border-color:var(--teal);}
+  .product-img{aspect-ratio:16/11;overflow:hidden;position:relative;background:var(--ice);}
+  .product-img img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.3,1);}
+  .product-card:hover .product-img img{transform:scale(1.08);}
+  .product-num{position:absolute;top:16px;left:16px;background:rgba(6,34,58,.92);color:var(--lime);font-family:'Fraunces',serif;font-weight:700;font-size:.85rem;padding:6px 14px;border-radius:100px;z-index:2;}
+  .product-body{padding:26px 26px 28px;display:flex;flex-direction:column;flex:1;}
+  .product-body h3{font-size:1.4rem;margin-bottom:10px;color:var(--navy);}
+  .product-body p{color:var(--muted);font-size:.9rem;line-height:1.6;margin-bottom:20px;flex:1;}
+  .product-link{display:inline-flex;align-items:center;gap:8px;color:var(--teal);font-weight:700;font-size:.88rem;letter-spacing:.3px;transition:gap .3s;}
+  .product-card:hover .product-link{gap:14px;}
+  .product-link i{transition:transform .3s;}
+  .product-card:hover .product-link i{transform:translateX(4px);}
+
+  .product-card-cta{background:var(--navy);color:#ffffff;padding:40px 32px;justify-content:center;align-items:center;text-align:center;border-color:var(--navy);}
+  .product-card-cta h3{color:#ffffff;font-size:1.5rem;margin-bottom:14px;}
+  .product-card-cta p{color:rgba(255,255,255,.75);font-size:.92rem;margin-bottom:24px;max-width:260px;}
+  .product-card-cta .btn{background:var(--lime);color:var(--navy);padding:14px 26px;font-size:.9rem;}
+  .product-card-cta .btn:hover{background:var(--accent-light);}
+  .product-card-cta i{font-size:2.4rem;margin-bottom:20px;color:var(--lime);}
+
+  /* ============ ABOUT ============ */
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
+  .about-visual{position:relative;}
+  .about-img{border-radius:24px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 24px 50px rgba(6,34,58,.18);}
+  .about-img img{width:100%;height:100%;object-fit:cover;}
+  .about-tag{position:absolute;top:24px;left:-20px;background:var(--lime);color:var(--navy);padding:10px 20px;border-radius:100px;font-weight:700;font-size:.78rem;letter-spacing:1.4px;text-transform:uppercase;box-shadow:0 12px 28px rgba(183,243,74,.4);}
+  .about-content .sec-kicker{display:block;text-align:left;}
+  .about-content h2{font-size:clamp(2rem,4.2vw,3rem);margin:16px 0 24px;text-align:left;}
+  .about-content h2 em{font-style:italic;color:var(--teal);font-weight:400;}
+  .about-content p{color:var(--ink-2);margin-bottom:18px;font-size:1.02rem;line-height:1.7;}
+  .about-note{background:var(--ice);border-left:3px solid var(--teal);padding:20px 24px;border-radius:12px;margin:26px 0;font-weight:600;color:var(--ink);font-size:.95rem;}
+  .about-features{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:30px;}
+  .af{display:flex;gap:14px;align-items:flex-start;}
+  .af i{color:var(--teal);font-size:1.15rem;margin-top:3px;}
+  .af b{display:block;font-family:'Fraunces',serif;font-size:1rem;color:var(--navy);margin-bottom:2px;}
+  .af span{font-size:.85rem;color:var(--muted);}
+
+  /* ============ WHY US ============ */
+  .why{background:var(--bg-2);}
+  .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;}
+  .why-card{background:var(--ice);border-radius:20px;padding:36px 28px;transition:.35s;position:relative;overflow:hidden;border:1px solid var(--line);}
+  .why-card:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(6,34,58,.14);border-color:var(--teal);}
+  .why-ico{width:56px;height:56px;border-radius:16px;background:var(--navy);color:var(--lime);display:grid;place-items:center;font-size:1.3rem;margin-bottom:24px;}
+  .why-card h3{font-size:1.15rem;margin-bottom:12px;color:var(--navy);}
+  .why-card p{color:var(--muted);font-size:.9rem;line-height:1.6;}
+
+  /* ============ CONTACT ============ */
+  .contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:50px;align-items:start;}
+  .contact-left h2{font-size:clamp(2rem,4.2vw,3rem);margin:16px 0 20px;}
+  .contact-left h2 em{font-style:italic;color:var(--teal);font-weight:400;}
+  .contact-left > p{color:var(--ink-2);margin-bottom:34px;font-size:1.02rem;}
+  .ci{display:flex;gap:18px;padding:22px 0;border-bottom:1px solid var(--line);align-items:flex-start;}
+  .ci:first-of-type{border-top:1px solid var(--line);}
+  .ci i{width:44px;height:44px;border-radius:12px;background:rgba(20,184,166,.12);color:var(--teal);display:grid;place-items:center;font-size:1rem;flex-shrink:0;}
+  .ci b{display:block;font-family:'Fraunces',serif;font-size:.85rem;text-transform:uppercase;letter-spacing:1.2px;color:var(--muted);font-weight:600;margin-bottom:4px;}
+  .ci a,.ci p{color:var(--ink);font-weight:600;font-size:.98rem;transition:.25s;display:block;}
+  .ci a:hover{color:var(--teal);}
+  .social-row{display:flex;gap:10px;margin-top:30px;}
+  .social-row a{width:44px;height:44px;border-radius:50%;background:var(--ice);color:var(--navy);display:grid;place-items:center;font-size:1rem;transition:.3s;border:1px solid var(--line);}
+  .social-row a:hover{background:var(--teal);color:#ffffff;transform:translateY(-3px);border-color:var(--teal);}
+
+  .cform{background:var(--card);padding:44px;border-radius:24px;box-shadow:0 20px 50px rgba(6,34,58,.1);border:1px solid var(--line);}
+  .cform h3{font-size:1.5rem;margin-bottom:6px;color:var(--navy);}
+  .cform .sub{color:var(--muted);font-size:.92rem;margin-bottom:26px;}
+  .field{margin-bottom:16px;}
+  .field label{display:block;font-size:.78rem;font-weight:700;color:var(--ink-2);margin-bottom:6px;text-transform:uppercase;letter-spacing:1.2px;}
+  .field input,.field select,.field textarea{width:100%;padding:14px 16px;border:1.5px solid var(--line);border-radius:12px;background:var(--ice);font-family:inherit;font-size:.95rem;color:var(--ink);transition:.25s;}
+  .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--teal);background:#fff;box-shadow:0 0 0 4px rgba(20,184,166,.12);}
+  .field textarea{min-height:110px;resize:vertical;}
+  .field-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  .cform button{width:100%;padding:16px;border-radius:12px;background:var(--navy);color:#ffffff;font-family:'Manrope',sans-serif;font-weight:700;font-size:.95rem;display:flex;align-items:center;justify-content:center;gap:10px;transition:.3s;}
+  .cform button:hover{background:var(--deep);transform:translateY(-2px);box-shadow:0 12px 28px rgba(6,34,58,.25);}
+  .form-msg{text-align:center;font-size:.85rem;font-weight:600;margin-top:12px;color:var(--teal);min-height:1.2em;}
+
+  /* ============ FOOTER ============ */
+  footer{background:var(--navy);color:#9fb6c7;padding:70px 28px 0; width: 100%;}
+  .foot-inner{max-width:1240px;margin:0 auto;}
+  .foot-grid{display:grid;grid-template-columns:2fr 1fr 1.3fr;gap:50px;padding-bottom:44px;border-bottom:1px solid rgba(255,255,255,.1);}
+  .foot-brand{display:flex;align-items:center;gap:12px;margin-bottom:20px;}
+  .foot-brand .brand-mark{background:var(--lime);color:var(--navy);}
+  .foot-brand .brand-name{color:#ffffff;}
+  .foot-brand .brand-name span{color:var(--lime);}
+  .foot-brand .brand-name small{color:#7a93a6;}
+  .foot-grid p{font-size:.92rem;line-height:1.7;color:#8ba6b9;}
+  .foot-col h4{color:#ffffff;font-family:'Fraunces',serif;font-size:.95rem;margin-bottom:20px;letter-spacing:.5px;}
+  .foot-col a,.foot-col p{display:block;color:#8ba6b9;font-size:.9rem;margin-bottom:10px;transition:.25s;}
+  .foot-col a:hover{color:var(--lime);}
+  .foot-col i{color:var(--lime);margin-right:8px;width:16px;}
+  .foot-bottom{max-width:1240px;margin:0 auto;padding:24px 0;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:.82rem;color:#7a93a6;}
+
+  /* ============ WHATSAPP FAB ============ */
+  .wa{position:fixed;right:24px;bottom:24px;width:60px;height:60px;border-radius:50%;background:#25d366;color:#fff;font-size:1.7rem;display:grid;place-items:center;box-shadow:0 10px 28px rgba(37,211,102,.4);z-index:90;transition:.3s;}
+  .wa:hover{transform:scale(1.1);}
+
+  /* ============================================================
+     PRODUCT DETAIL PAGE
+     ============================================================ */
+  .pdp{background:var(--bg);min-height:100vh;padding-top:20px;}
+  .back-bar{max-width:1240px;margin:0 auto;padding:24px 28px 0;}
+  .back-btn{display:inline-flex;align-items:center;gap:10px;color:var(--navy);font-weight:700;font-size:.9rem;padding:10px 20px;border-radius:100px;background:var(--ice);transition:.3s;border:1px solid var(--line);cursor:pointer;}
+  .back-btn:hover{background:var(--navy);color:#ffffff;border-color:var(--navy);}
+  .pdp-hero{padding:40px 28px 80px;}
+  .pdp-hero-inner{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;}
+  .pdp-img-wrap{position:relative;border-radius:28px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 30px 60px rgba(6,34,58,.22);background:var(--ice);}
+  .pdp-img-wrap img{width:100%;height:100%;object-fit:cover;}
+  .pdp-num{position:absolute;top:22px;left:22px;background:rgba(6,34,58,.92);color:var(--lime);font-family:'Fraunces',serif;font-weight:700;font-size:1rem;padding:10px 20px;border-radius:100px;z-index:2;}
+  .pdp-copy .sec-kicker{display:block;text-align:left;margin-bottom:16px;}
+  .pdp-copy h1{font-size:clamp(2.2rem,5vw,3.8rem);font-weight:700;margin-bottom:22px;line-height:1;color:var(--navy);}
+  .pdp-copy .lead{color:var(--ink-2);font-size:1.1rem;line-height:1.7;margin-bottom:30px;}
+  .pdp-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:36px;}
+  .pdp-actions .btn-primary{background:var(--navy);color:#ffffff;}
+  .pdp-actions .btn-primary:hover{background:var(--deep);box-shadow:0 12px 28px rgba(6,34,58,.25);}
+  .pdp-actions .btn-ghost{border-color:var(--line);color:var(--navy);background:transparent;}
+  .pdp-actions .btn-ghost:hover{border-color:var(--teal);color:var(--teal);}
+  .pdp-quick{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding-top:30px;border-top:1px solid var(--line);}
+  .pq{display:flex;gap:12px;align-items:flex-start;}
+  .pq i{color:var(--teal);font-size:1rem;margin-top:3px;}
+  .pq b{display:block;font-size:.78rem;text-transform:uppercase;letter-spacing:1.2px;color:var(--muted);font-weight:600;margin-bottom:2px;}
+  .pq span{font-size:.9rem;color:var(--ink);font-weight:600;}
+
+  .pdp-details{padding:80px 28px;background:var(--bg-2);}
+  .pdp-details-inner{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1.2fr 1fr;gap:70px;align-items:start;}
+  .pdp-details-copy h2{font-size:clamp(1.8rem,3.5vw,2.6rem);margin-bottom:24px;text-align:left;}
+  .pdp-details-copy h2 em{font-style:italic;color:var(--teal);font-weight:400;}
+  .pdp-details-copy p{color:var(--ink-2);font-size:1.02rem;line-height:1.75;margin-bottom:18px;}
+  .use-list{list-style:none;margin:26px 0;}
+  .use-list li{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--line);align-items:flex-start;font-size:.98rem;color:var(--ink-2);}
+  .use-list li:last-child{border-bottom:none;}
+  .use-list li i{color:var(--teal);font-size:.95rem;margin-top:5px;}
+  .use-list li b{color:var(--navy);font-weight:700;}
+  .spec-card{background:var(--ice);border-radius:20px;padding:36px;box-shadow:0 12px 30px rgba(6,34,58,.08);position:sticky;top:100px;border:1px solid var(--line);}
+  .spec-card h3{font-size:1.2rem;margin-bottom:20px;padding-bottom:16px;border-bottom:1px solid var(--line);color:var(--navy);}
+  .spec-row{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line);gap:16px;font-size:.92rem;}
+  .spec-row:last-child{border-bottom:none;}
+  .spec-row span:first-child{color:var(--muted);font-weight:600;}
+  .spec-row span:last-child{color:var(--navy);font-weight:700;text-align:right;}
+
+  .pdp-quote{padding:100px 28px;background:var(--bg);}
+  .pdp-quote-inner{max-width:900px;margin:0 auto;text-align:center;}
+  .pdp-quote-inner .sec-kicker{text-align:center;}
+  .pdp-quote-inner h2{font-size:clamp(1.9rem,4vw,2.9rem);margin:16px 0 14px;}
+  .pdp-quote-inner h2 em{font-style:italic;color:var(--teal);font-weight:400;}
+  .pdp-quote-inner > p{color:var(--muted);margin-bottom:44px;font-size:1.02rem;}
+  .pdp-quote .cform{text-align:left;}
+
+  /* ============ RESPONSIVE ============ */
+  @media(max-width:1024px){
+    .hero-inner{grid-template-columns:1fr;gap:50px;}
+    .hero-visual{max-width:480px;margin:0 auto;}
+    .visual-banners{grid-template-columns:1fr;}
+    .vb-panel{min-height:400px;padding:50px 30px;}
+    .product-grid{grid-template-columns:1fr 1fr;}
+    .about-grid{grid-template-columns:1fr;gap:50px;}
+    .about-visual{max-width:520px;margin:0 auto;}
+    .why-grid{grid-template-columns:1fr 1fr;}
+    .contact-grid{grid-template-columns:1fr;gap:40px;}
+    .pdp-hero-inner{grid-template-columns:1fr;gap:40px;}
+    .pdp-img-wrap{max-width:500px;margin:0 auto;aspect-ratio:1;}
+    .pdp-details-inner{grid-template-columns:1fr;gap:40px;}
+    .spec-card{position:relative;top:0;}
+    .foot-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media(max-width:768px){
+    .nav ul{position:fixed;top:80px;right:-100%;width:80%;height:calc(100vh - 80px);background:var(--navy);flex-direction:column;justify-content:flex-start;padding:40px 32px;gap:8px;transition:right .3s ease;border-left:1px solid rgba(255,255,255,.1); z-index: 999; box-shadow: -10px 0 30px rgba(0,0,0,0.5);}
+    .nav ul.open{right:0;}
+    .nav ul a{width:100%;padding:16px;font-size:1rem;}
+    .nav-cta{justify-content:center;margin-top:12px;}
+    .burger{display:block;}
+    section{padding:60px 20px;}
+    .hero{padding:40px 20px 60px;}
+    .hero h1 { min-height: 4.5em; }
+    .vb-panel{min-height:auto;padding:60px 20px;justify-content:center;text-align:center;}
+    .vb-content{max-width:100%; padding: 0;}
+    .vb-content h2{font-size: 2.2rem;}
+    .vb-content p{font-size: 0.95rem;}
+    .vb-btns{justify-content:center; flex-direction: column; width: 100%; gap: 10px;}
+    .vb-btn-orange, .vb-btn-light{width: 100%; display: block;}
+    .product-grid{grid-template-columns:1fr;}
+    .why-grid{grid-template-columns:1fr;}
+    .field-row{grid-template-columns:1fr;}
+    .cform{padding:28px 22px;}
+    .about-features{grid-template-columns:1fr;}
+    .foot-grid{grid-template-columns:1fr;gap:34px;}
+    .hero-meta{gap:28px;flex-wrap:wrap;}
+    .pdp-quick{grid-template-columns:1fr;}
+    .spec-card{padding:26px 22px;}
+    .back-bar{padding:18px 20px 0;}
+    .services-section{padding:60px 20px;}
+  }
+  @media(max-width:480px){
+    .hero h1{font-size:2.3rem;}
+    .hero-img{border-radius:150px 150px 16px 16px;}
+    .pdp-copy h1{font-size:2rem;}
+    .foot-bottom{flex-direction:column;text-align:center;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand" onclick="showPage('home')">
+      <span class="brand-mark">BE</span>
+      <span class="brand-name">BRIGHT <span>EPIC</span><small>Chemical Supplier</small></span>
+    </div>
+    <ul id="navLinks">
+      <li><a href="#products" onclick="goHome('products');return false;">Products</a></li>
+      <li><a href="#about" onclick="goHome('about');return false;">About</a></li>
+      <li><a href="#why" onclick="goHome('why');return false;">Why Us</a></li>
+      <li><a href="#contact" onclick="goHome('contact');return false;">Contact</a></li>
+      <li><a href="#contact" class="nav-cta" onclick="goHome('contact');return false;"><i class="fas fa-paper-plane"></i> Get a Quote</a></li>
+    </ul>
+    <button class="burger" id="burger" aria-label="Menu"><i class="fas fa-bars"></i></button>
+  </div>
+</header>
+
+<div id="page-home" class="page active">
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <span class="hero-kicker">Chemical Supply & Trading</span>
+        <h1><span id="typing-text"></span><span class="cursor"></span></h1>
+        <p>Bright Epic International is a trusted chemical supplier based in Dar es Salaam, Tanzania — stocking and delivering certified industrial chemicals for water treatment, manufacturing, and processing industries.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary" onclick="goHome('contact');return false;"><i class="fas fa-file-invoice"></i> Request a Quote</a>
+          <a href="#products" class="btn btn-ghost" onclick="goHome('products');return false;"><i class="fas fa-arrow-down"></i> View Products</a>
+        </div>
+        <div class="hero-meta">
+          <div class="hmeta"><strong>6</strong><span>Chemicals</span></div>
+          <div class="hmeta"><strong>100%</strong><span>Quality Assured</span></div>
+          <div class="hmeta"><strong>Fast</strong><span>Response Time</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-deco"></div>
+        <div class="hero-img">
+          <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=900&q=80" alt="Chemical laboratory Tanzania">
+        </div>
+        <div class="hero-badge">
+          <i class="fas fa-truck-fast"></i>
+          <div><b>Fast Delivery</b><small>Dar es Salaam & nationwide</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="visual-banners">
+    <div class="vb-panel" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop');">
+      <div class="vb-content">
+        <h2>Local Sourcing</h2>
+        <p>Procurement of quality grade chemicals across Tanzania.</p>
+        <div class="vb-btns">
+          <a href="#services" onclick="goHome('services');return false;" class="vb-btn-orange">OUR SERVICES</a>
+          <a href="#about" onclick="goHome('about');return false;" class="vb-btn-light">MORE ABOUT US</a>
+        </div>
+      </div>
+    </div>
+    <div class="vb-panel" style="background-image: url('https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?q=80&w=1000&auto=format&fit=crop');">
+      <div class="vb-content">
+        <h2>Quality Assurance & Control</h2>
+        <p>All products within our portfolio are supplied with the highest standards, quality assurance and control schemes to guarantee client satisfaction</p>
+        <div class="vb-btns">
+          <a href="#services" onclick="goHome('services');return false;" class="vb-btn-orange">OUR SERVICES</a>
+          <a href="#about" onclick="goHome('about');return false;" class="vb-btn-light">MORE ABOUT US</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="services-section" id="services">
+    <div class="services-inner">
+      <div class="services-header">
+        <span class="services-kicker">Our Services</span>
+        <h2>Delivering the Best Industry Services.</h2>
+        <p>Through value chain enhancement, we offer a consistent supply of premium quality processing chemicals. We specialize in: distribution and safe storage of key raw materials for industries.</p>
+      </div>
+      <div class="service-block">
+        <img src="https://images.unsplash.com/photo-1534067783941-51c9c23ecefd?q=80&w=1000&auto=format&fit=crop" alt="Supplier in Tanzania">
+        <h3>We Are a Supplier in Tanzania</h3>
+        <p>Bright Epic International operates strictly as a chemical supplier based in Tanzania. We source quality chemicals to meet the demands of local industries, ensuring you get the right raw materials safely and on time.</p>
+      </div>
+      <div class="service-block">
+        <img src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?q=80&w=1000&auto=format&fit=crop" alt="Local Logistics Mainland Tanzania">
+        <h3>Local Logistics (Mainland Tanzania)</h3>
+        <p>Our diligent staff facilitate the acquisition and movement of cargo safely, from our supply chain to the client's doorstep via: integrity, Pedigree, chain of custody and transport visibility across mainland Tanzania.</p>
+      </div>
+      <div class="service-block">
+        <img src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?q=80&w=1000&auto=format&fit=crop" alt="Warehousing">
+        <h3>Warehousing</h3>
+        <p>Our top notch warehouses, in different regions of Tanzania have a large and safe storage capacity. This enables us to build a continuous distribution chain for our high volume customers so they can carry out their operations without worrying about product availability.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="products" id="products">
+    <div class="container">
+      <div class="sec-head">
+        <span class="sec-kicker">What We Supply</span>
+        <h2>Our Core Chemicals. <em>Tap any to explore.</em></h2>
+        <p>Click a product to see full details, uses, specs, and request a quote — delivered with quality assurance from Bright Epic International.</p>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-img">
+            <img src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=900&q=80" alt="Chemical supply warehouse Dar es Salaam">
+          </div>
+          <div class="about-tag">Vingunguti · Dar es Salaam</div>
+        </div>
+        <div class="about-content">
+          <span class="sec-kicker">About Bright Epic International</span>
+          <h2>We are a <em>supplier & deliver.</em></h2>
+          <p>Bright Epic International is a premier chemical trading and supply company based in Tanzania — bridging the gap between supply and Tanzanian industry.</p>
+          <p>We partner with trusted sources, ensure every product meets safety and quality standards, and deliver it to your site on time. Our model is built on reliability, compliance, and local expertise.</p>
+          <div class="about-note">
+            <i class="fas fa-info-circle" style="color:var(--teal);margin-right:8px;"></i>
+            Bright Epic International is a supplier based in Tanzania — flexible sourcing, competitive pricing, and compliance documentation on every order.
+          </div>
+          <div class="about-features">
+            <div class="af"><i class="fas fa-certificate"></i><div><b>Compliant Supply</b><span>Full documentation</span></div></div>
+            <div class="af"><i class="fas fa-shield-halved"></i><div><b>Safety Compliant</b><span>Industry standards</span></div></div>
+            <div class="af"><i class="fas fa-truck"></i><div><b>Nationwide Delivery</b><span>Across Tanzania</span></div></div>
+            <div class="af"><i class="fas fa-headset"></i><div><b>Dedicated Support</b><span>Responsive team</span></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why" id="why">
+    <div class="container">
+      <div class="sec-head">
+        <span class="sec-kicker">Why Choose Us</span>
+        <h2>The Bright Epic International <em>advantage.</em></h2>
+        <p>Four reasons industrial buyers across Tanzania choose Bright Epic International as their chemical supply partner.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-ico"><i class="fas fa-truck-fast"></i></div>
+          <h3>Reliable Supply</h3>
+          <p>Consistent stock availability and dependable delivery schedules — so your operations never stop waiting.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-ico"><i class="fas fa-certificate"></i></div>
+          <h3>Verified Quality</h3>
+          <p>We source only verified products with full documentation and certificates of analysis on every order.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-ico"><i class="fas fa-shield-halved"></i></div>
+          <h3>Safety First</h3>
+          <p>All chemicals are handled, stored, and transported in line with industry safety and Tanzanian regulations.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-ico"><i class="fas fa-location-dot"></i></div>
+          <h3>Local Expertise</h3>
+          <p>Based in Vingunguti, Dar es Salaam — deep market knowledge, fast response, and personal service from Bright Epic International.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-left">
+          <span class="sec-kicker">Get In Touch</span>
+          <h2>Let's talk <em>chemicals.</em></h2>
+          <p>Reach out to Bright Epic International for quotes, product data sheets, or bulk supply inquiries. We respond fast — usually within a few hours.</p>
+          <div class="ci">
+            <i class="fas fa-location-dot"></i>
+            <div><b>Location</b><p>Vingunguti, Dar es Salaam, Tanzania</p></div>
+          </div>
+          <div class="ci">
+            <i class="fas fa-phone"></i>
+            <div><b>Call / WhatsApp</b><a href="tel:0746977110">0746 977 110</a></div>
+          </div>
+          <div class="ci">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <b>Email Us</b>
+              <a href="mailto:manager@brightepic.co.tz">manager@brightepic.co.tz</a>
+              <a href="mailto:info@brightepic.co.tz">info@brightepic.co.tz</a>
+              <a href="mailto:sales@brightepic.co.tz">sales@brightepic.co.tz</a>
+            </div>
+          </div>
+          <div class="social-row">
+            <a href="https://www.instagram.com/bright_epic.international" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61564911428076" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/255746977110" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="tel:0746977110" aria-label="Phone"><i class="fas fa-phone"></i></a>
+          </div>
+        </div>
+
+        <div class="cform">
+          <h3>Send us a message</h3>
+          <p class="sub">Fill in the form and Bright Epic International will get back with a quote.</p>
+          <form id="contactForm">
+            <div class="field-row">
+              <div class="field"><label for="name">Full Name *</label><input type="text" id="name" required placeholder="Your name"></div>
+              <div class="field"><label for="email">Email *</label><input type="email" id="email" required placeholder="you@company.com"></div>
+            </div>
+            <div class="field-row">
+              <div class="field"><label for="phone">Phone</label><input type="tel" id="phone" placeholder="+255 ..."></div>
+              <div class="field"><label for="chemical">Chemical</label>
+                <select id="chemical">
+                  <option value="">Select (optional)</option>
+                  <option>Hydrochloric Acid</option>
+                  <option>Nitric Acid</option>
+                  <option>Caustic Soda 25kg</option>
+                  <option>Aluminium Sulphate 25kg</option>
+                  <option>Sodium Bicarbonate 25kg</option>
+                  <option>Calcium Hypochlorite 45kg</option>
+                  <option>Other / Custom</option>
+                </select>
+              </div>
+            </div>
+            <div class="field"><label for="message">Message *</label><textarea id="message" required placeholder="Quantities, delivery location, timeline..."></textarea></div>
+            <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+            <p class="form-msg" id="formMsg"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<div id="page-product" class="page">
+  <div class="pdp">
+    <div class="back-bar">
+      <button class="back-btn" onclick="showPage('home');scrollToProducts()"><i class="fas fa-arrow-left"></i> Back to Products</button>
+    </div>
+
+    <section class="pdp-hero">
+      <div class="pdp-hero-inner">
+        <div class="pdp-img-wrap">
+          <span class="pdp-num" id="pdpNum">01</span>
+          <img id="pdpImage" src="" alt="Product">
+        </div>
+        <div class="pdp-copy">
+          <span class="sec-kicker">Product Detail</span>
+          <h1 id="pdpName">Product Name</h1>
+          <p class="lead" id="pdpLead"></p>
+          <div class="pdp-actions">
+            <a href="#pdpQuote" class="btn btn-primary" onclick="event.preventDefault();document.getElementById('pdpQuote').scrollIntoView({behavior:'smooth'});"><i class="fas fa-file-invoice"></i> Request Quote</a>
+            <a href="mailto:manager@brightepic.co.tz?subject=Data%20Sheet%20Request" class="btn btn-ghost" id="pdpEmailBtn"><i class="fas fa-envelope"></i> Email for Data Sheet</a>
+          </div>
+          <div class="pdp-quick">
+            <div class="pq"><i class="fas fa-certificate"></i><div><b>Quality Documentation</b><span>Certificate of analysis provided</span></div></div>
+            <div class="pq"><i class="fas fa-truck"></i><div><b>Delivery</b><span>Nationwide · Tanzania</span></div></div>
+            <div class="pq"><i class="fas fa-box"></i><div><b>Packaging</b><span id="pdpPack">Standard industrial</span></div></div>
+            <div class="pq"><i class="fas fa-clock"></i><div><b>Lead Time</b><span>Fast local delivery</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pdp-details">
+      <div class="pdp-details-inner">
+        <div class="pdp-details-copy">
+          <span class="sec-kicker">Overview & Uses</span>
+          <h2>About <em id="pdpNameInline">this product</em></h2>
+          <p id="pdpDesc1"></p>
+          <p id="pdpDesc2"></p>
+          <h3 style="font-size:1.15rem;margin:30px 0 6px;">Common Applications</h3>
+          <ul class="use-list" id="pdpUses"></ul>
+        </div>
+        <div class="spec-card">
+          <h3><i class="fas fa-list-check" style="color:var(--teal);margin-right:8px;"></i>Specifications</h3>
+          <div id="pdpSpecs"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pdp-quote" id="pdpQuote">
+      <div class="pdp-quote-inner">
+        <span class="sec-kicker">Get a Quote</span>
+        <h2>Request a quote for <em id="pdpNameQuote">this product</em></h2>
+        <p>Fill the form below — it's pre-filled with this chemical. Bright Epic International will respond within a few hours.</p>
+        <div class="cform">
+          <form id="productQuoteForm">
+            <div class="field-row">
+              <div class="field"><label for="pqName">Full Name *</label><input type="text" id="pqName" required placeholder="Your name"></div>
+              <div class="field"><label for="pqEmail">Email *</label><input type="email" id="pqEmail" required placeholder="you@company.com"></div>
+            </div>
+            <div class="field-row">
+              <div class="field"><label for="pqPhone">Phone</label><input type="tel" id="pqPhone" placeholder="+255 ..."></div>
+              <div class="field"><label for="pqChemical">Chemical</label><input type="text" id="pqChemical" readonly></div>
+            </div>
+            <div class="field"><label for="pqMessage">Message *</label><textarea id="pqMessage" required placeholder="Quantity needed, delivery location, timeline..."></textarea></div>
+            <button type="submit"><i class="fas fa-paper-plane"></i> Send Quote Request</button>
+            <p class="form-msg" id="pqMsg"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<footer>
+  <div class="foot-inner">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <span class="brand-mark">BE</span>
+          <span class="brand-name">BRIGHT <span>EPIC</span><small>Chemical Supplier</small></span>
+        </div>
+        <p>Bright Epic International is a premium chemical supply & trading company based in Dar es Salaam, Tanzania. Sourcing quality industrial chemicals for water treatment, manufacturing, and processing industries.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Quick Links</h4>
+        <a href="#" onclick="showPage('home');return false;">Home</a>
+        <a href="#products" onclick="goHome('products');return false;">Products</a>
+        <a href="#about" onclick="goHome('about');return false;">About Us</a>
+        <a href="#why" onclick="goHome('why');return false;">Why Us</a>
+        <a href="#contact" onclick="goHome('contact');return false;">Contact</a>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <a href="tel:0746977110"><i class="fas fa-phone"></i> 0746 977 110</a>
+        <a href="mailto:manager@brightepic.co.tz"><i class="fas fa-envelope"></i> manager@brightepic.co.tz</a>
+        <a href="mailto:info@brightepic.co.tz"><i class="fas fa-envelope"></i> info@brightepic.co.tz</a>
+        <a href="mailto:sales@brightepic.co.tz"><i class="fas fa-envelope"></i> sales@brightepic.co.tz</a>
+        <p><i class="fas fa-location-dot"></i> Vingunguti, Dar es Salaam</p>
+        <a href="https://www.instagram.com/bright_epic.international" target="_blank" rel="noopener"><i class="fab fa-instagram"></i> @bright_epic.international</a>
+        <a href="https://www.facebook.com/profile.php?id=61564911428076" target="_blank" rel="noopener"><i class="fab fa-facebook"></i> Bright Epic International</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span id="copyright">&copy; 2025 Bright Epic International. All Rights Reserved.</span>
+      <span>Chemical Supplier & Trading — Dar es Salaam, Tanzania</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/255746977110" class="wa" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+<noscript>
+  <style>.hero h1{display:none;} #typing-text::before{content:"We supply what industry runs on.";} .cursor{display:none;}</style>
+</noscript>
+
+<script>
+/* ============================================================
+   TYPING EFFECT (fixed)
+   ============================================================ */
+(function(){
+  const el = document.getElementById('typing-text');
+  const plain = "We supply what industry runs on.";
+  const splitAt = 15;
+  let idx = 0;
+  let deleting = false;
+
+  function render(n){
+    if(n <= splitAt){
+      el.innerHTML = plain.substring(0, n);
+    } else {
+      el.innerHTML = plain.substring(0, splitAt) + '<em>' + plain.substring(splitAt, n) + '</em>';
+    }
+  }
+
+  function tick(){
+    if(!deleting){
+      idx++;
+      render(idx);
+      if(idx >= plain.length){
+        deleting = true;
+        setTimeout(tick, 2500);
+        return;
+      }
+      setTimeout(tick, 80);
+    } else {
+      idx--;
+      render(idx);
+      if(idx <= 0){
+        deleting = false;
+        setTimeout(tick, 500);
+        return;
+      }
+      setTimeout(tick, 40);
+    }
+  }
+  setTimeout(tick, 500);
+})();
+
+/* ============================================================
+   PRODUCT DATA (6 unique products)
+   ============================================================ */
+const PRODUCTS = [
+  {
+    id: 'hydrochloric-acid',
+    num: '01',
+    name: 'Hydrochloric Acid',
+    short: 'Versatile acid for metal processing, cleaning, and industrial applications.',
+    lead: 'Industrial-grade hydrochloric acid — essential for metal pickling, water treatment, and chemical processing.',
+    desc1: 'Hydrochloric Acid (HCl) is a strong mineral acid widely used in metal processing, water treatment, and various industrial applications. Bright Epic International supplies industrial-grade HCl with full documentation and safety compliance.',
+    desc2: 'Available in multiple concentrations to suit your specific application, packaged in safe, regulation-compliant containers by Bright Epic International.',
+    image: 'https://images.unsplash.com/photo-1581093588401-fbb62a02f120?w=900&q=80',
+    pack: '35kg drums / IBC',
+    uses: [
+      ['Metal Pickling', 'Removing rust and scale from steel.'],
+      ['Water Treatment', 'pH adjustment in industrial water systems.'],
+      ['Chemical Processing', 'Intermediate in organic and inorganic synthesis.'],
+      ['Cleaning', 'Descaling and industrial cleaning applications.']
+    ],
+    specs: [
+      ['Chemical Formula','HCl'],
+      ['Appearance','Colourless / pale yellow liquid'],
+      ['Concentration','30–33% (industrial grade)'],
+      ['Packaging','35kg drums, IBC totes'],
+      ['Documentation','COA provided']
+    ]
+  },
+  {
+    id: 'nitric-acid',
+    num: '02',
+    name: 'Nitric Acid',
+    short: 'Industrial grade acid for manufacturing and processing applications.',
+    lead: 'Strong oxidising acid for industrial manufacturing — supplied in compliance-grade containers with full safety documentation.',
+    desc1: 'Nitric Acid (HNO₃) is a highly corrosive and strong oxidising acid used in fertiliser production, metal processing, and various chemical manufacturing processes. Bright Epic International supplies industrial-grade nitric acid with complete documentation.',
+    desc2: 'Delivered in appropriate safety containers, following all regulatory handling requirements. Suitable for both bulk and small industrial operations through Bright Epic International.',
+    image: 'https://images.unsplash.com/photo-1554475901-4538ddfbccc2?w=900&q=80',
+    pack: '35kg drums / IBC',
+    uses: [
+      ['Fertiliser Production', 'Raw material for ammonium nitrate fertilisers.'],
+      ['Metal Processing', 'Pickling and etching of metals.'],
+      ['Chemical Manufacturing', 'Intermediate for various organic compounds.'],
+      ['Industrial Cleaning', 'Specialised cleaning applications.']
+    ],
+    specs: [
+      ['Chemical Formula','HNO₃'],
+      ['Appearance','Colourless / pale yellow liquid'],
+      ['Concentration','68% (industrial grade)'],
+      ['Packaging','35kg drums, IBC totes'],
+      ['Documentation','COA provided']
+    ]
+  },
+  {
+    id: 'caustic-soda-25kg',
+    num: '03',
+    name: 'Caustic Soda 25kg',
+    short: 'Essential for industrial cleaning, pH control, and manufacturing processes.',
+    lead: 'High-purity sodium hydroxide (NaOH) supplied in 25kg flakes — a versatile industrial chemical used across cleaning, manufacturing, and water treatment.',
+    desc1: 'Caustic Soda (Sodium Hydroxide) is one of the most widely used industrial chemicals in the world. Bright Epic International supplies high-grade caustic soda flakes, sourced from verified suppliers and delivered with full documentation.',
+    desc2: 'Its strong alkaline properties make it essential for pH adjustment, saponification, and neutralisation processes. Available in 25kg industrial-grade packaging for bulk and small orders through Bright Epic International.',
+    image: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=900&q=80',
+    pack: '25kg bags',
+    uses: [
+      ['Industrial Cleaning', 'Degreasing and cleaning of tanks, pipes, and equipment.'],
+      ['pH Control', 'Neutralising acidic waste streams in treatment plants.'],
+      ['Soap & Detergent', 'Saponification in soap and detergent manufacturing.'],
+      ['Water Treatment', 'Adjusting pH in municipal and industrial water systems.']
+    ],
+    specs: [
+      ['Chemical Formula','NaOH'],
+      ['Appearance','White flakes'],
+      ['Purity','≥ 99% (flakes)'],
+      ['Packaging','25kg bags'],
+      ['Documentation','COA provided']
+    ]
+  },
+  {
+    id: 'aluminium-sulphate-25kg',
+    num: '04',
+    name: 'Aluminium Sulphate 25kg',
+    short: 'High-quality solution for water treatment and purification applications.',
+    lead: 'Industrial-grade aluminium sulphate in 25kg bags — the go-to coagulant for municipal and industrial water treatment across Tanzania.',
+    desc1: 'Aluminium Sulphate (Al₂(SO₄)₃) is a critical coagulant used in water treatment plants to remove suspended impurities. Bright Epic International supplies solid form in 25kg packaging suitable for both municipal and industrial treatment operations.',
+    desc2: 'Sourced from certified suppliers and delivered with documentation for compliance with water treatment standards.',
+    image: 'https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=900&q=80',
+    pack: '25kg bags',
+    uses: [
+      ['Water Treatment', 'Coagulation and flocculation in drinking water plants.'],
+      ['Wastewater', 'Removing suspended solids from industrial wastewater.'],
+      ['Paper Industry', 'Sizing agent in paper manufacturing.'],
+      ['Textile Industry', 'Mordant in textile dyeing processes.']
+    ],
+    specs: [
+      ['Chemical Formula','Al₂(SO₄)₃'],
+      ['Appearance','White / off-white granules'],
+      ['Al₂O₃ Content','≥ 17%'],
+      ['Packaging','25kg bags'],
+      ['Documentation','COA provided']
+    ]
+  },
+  {
+    id: 'sodium-bicarbonate-25kg',
+    num: '05',
+    name: 'Sodium Bicarbonate 25kg',
+    short: 'Versatile compound for pH balancing, cleaning, and industrial processing.',
+    lead: 'High-quality sodium bicarbonate in 25kg bags — essential for pH adjustment, flue gas treatment, and various industrial processes.',
+    desc1: 'Sodium Bicarbonate (NaHCO₃), commonly known as baking soda, is a versatile alkaline compound used across numerous industries. Bright Epic International supplies high-purity industrial-grade sodium bicarbonate in 25kg packaging.',
+    desc2: 'Our product is sourced from trusted suppliers and comes with full documentation, ensuring quality and compliance for your industrial applications.',
+    image: 'https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=900&q=80',
+    pack: '25kg bags',
+    uses: [
+      ['Flue Gas Treatment', 'Neutralising acidic gases in industrial emissions.'],
+      ['pH Adjustment', 'Balancing pH levels in various chemical processes.'],
+      ['Cleaning', 'Abrasive blasting and industrial cleaning applications.'],
+      ['Animal Feed', 'Additive in animal feed production.']
+    ],
+    specs: [
+      ['Chemical Formula','NaHCO₃'],
+      ['Appearance','White crystalline powder'],
+      ['Purity','≥ 99%'],
+      ['Packaging','25kg bags'],
+      ['Documentation','COA provided']
+    ]
+  },
+  {
+    id: 'calcium-hypochlorite-45kg',
+    num: '06',
+    name: 'Calcium Hypochlorite 45kg',
+    short: 'Powerful disinfectant for water sanitation and pool treatment.',
+    lead: 'High-strength calcium hypochlorite granules in 45kg drums — the preferred disinfectant for water sanitation, pools, and industrial cleaning.',
+    desc1: 'Calcium Hypochlorite (Ca(OCl)₂) is a powerful chlorine-based disinfectant used across water treatment, pool sanitation, and industrial cleaning. Bright Epic International supplies high-purity granules in sealed, moisture-resistant 45kg packaging.',
+    desc2: 'Our calcium hypochlorite is sourced from verified suppliers and delivered with full documentation for safe handling and use.',
+    image: 'https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=900&q=80',
+    pack: '45kg drums',
+    uses: [
+      ['Water Treatment', 'Disinfection of drinking water supplies.'],
+      ['Pool Sanitation', 'Chlorination of swimming pools.'],
+      ['Industrial Cleaning', 'Sanitising equipment and surfaces.'],
+      ['Sewage Treatment', 'Disinfection of wastewater streams.']
+    ],
+    specs: [
+      ['Chemical Formula','Ca(OCl)₂'],
+      ['Appearance','White / grey granules'],
+      ['Available Chlorine','65–70%'],
+      ['Packaging','45kg drums'],
+      ['Documentation','COA provided']
+    ]
+  }
+];
+
+/* ============================================================
+   RENDER PRODUCT CARDS
+   ============================================================ */
+const grid = document.getElementById('productGrid');
+if (grid) {
+  PRODUCTS.forEach(p => {
+    const card = document.createElement('div');
+    card.className = 'product-card';
+    card.onclick = () => openProduct(p.id);
+    card.innerHTML = `
+      <div class="product-img">
+        <span class="product-num">${p.num}</span>
+        <img src="${p.image}" alt="${p.name}" loading="lazy">
+      </div>
+      <div class="product-body">
+        <h3>${p.name}</h3>
+        <p>${p.short}</p>
+        <span class="product-link">View Details <i class="fas fa-arrow-right"></i></span>
+      </div>
+    `;
+    grid.appendChild(card);
+  });
+
+  const cta = document.createElement('div');
+  cta.className = 'product-card product-card-cta';
+  cta.onclick = () => { showPage('home'); setTimeout(()=>document.getElementById('contact').scrollIntoView({behavior:'smooth'}),100); };
+  cta.innerHTML = `
+    <i class="fas fa-flask-vial"></i>
+    <h3>Need something else?</h3>
+    <p>Bright Epic International sources custom chemicals on request. Tell us what you need — we'll find it.</p>
+    <span class="btn"><i class="fas fa-arrow-right"></i> Request Custom</span>
+  `;
+  grid.appendChild(cta);
+}
+
+/* ============================================================
+   PAGE ROUTING
+   ============================================================ */
+function showPage(name){
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  const page = document.getElementById('page-' + name);
+  if (page) page.classList.add('active');
+  window.scrollTo({top:0,behavior:'instant'});
+}
+function goHome(anchor){
+  showPage('home');
+  setTimeout(()=>{
+    const el = document.getElementById(anchor);
+    if(el) {
+      const yOffset = -80;
+      const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({top: y, behavior: 'smooth'});
+    }
+  }, 60);
+}
+function scrollToProducts(){
+  setTimeout(()=>{
+    const el = document.getElementById('products');
+    if(el) {
+      const yOffset = -80;
+      const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({top: y, behavior: 'smooth'});
+    }
+  }, 60);
+}
+
+/* ============================================================
+   OPEN PRODUCT PAGE
+   ============================================================ */
+function openProduct(id){
+  const p = PRODUCTS.find(x => x.id === id);
+  if(!p) return;
+
+  document.getElementById('pdpNum').textContent = p.num;
+  document.getElementById('pdpImage').src = p.image;
+  document.getElementById('pdpImage').alt = p.name;
+  document.getElementById('pdpName').textContent = p.name;
+  document.getElementById('pdpNameInline').textContent = p.name;
+  document.getElementById('pdpNameQuote').textContent = p.name;
+  document.getElementById('pdpLead').textContent = p.lead;
+  document.getElementById('pdpDesc1').textContent = p.desc1;
+  document.getElementById('pdpDesc2').textContent = p.desc2;
+  document.getElementById('pdpPack').textContent = p.pack;
+
+  const subj = encodeURIComponent(`Data Sheet Request — ${p.name}`);
+  const body = encodeURIComponent(`Hello Bright Epic International,\n\nI would like to request the data sheet / COA for ${p.name}.\n\nThank you.`);
+  document.getElementById('pdpEmailBtn').href = `mailto:manager@brightepic.co.tz,info@brightepic.co.tz,sales@brightepic.co.tz?subject=${subj}&body=${body}`;
+
+  const usesEl = document.getElementById('pdpUses');
+  usesEl.innerHTML = '';
+  p.uses.forEach(u => {
+    const li = document.createElement('li');
+    li.innerHTML = `<i class="fas fa-check"></i><div><b>${u[0]}:</b> ${u[1]}</div>`;
+    usesEl.appendChild(li);
+  });
+
+  const specsEl = document.getElementById('pdpSpecs');
+  specsEl.innerHTML = '';
+  p.specs.forEach(s => {
+    const row = document.createElement('div');
+    row.className = 'spec-row';
+    row.innerHTML = `<span>${s[0]}</span><span>${s[1]}</span>`;
+    specsEl.appendChild(row);
+  });
+
+  document.getElementById('pqMsg').textContent = '';
+  document.getElementById('productQuoteForm').reset();
+  document.getElementById('pqChemical').value = p.name;
+
+  showPage('product');
+}
+
+/* ============================================================
+   FORMS (mailto fallback — replace with Formspree/Web3Forms for production)
+   ============================================================ */
+document.getElementById('contactForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const phone = document.getElementById('phone').value.trim();
+  const chemical = document.getElementById('chemical').value;
+  const message = document.getElementById('message').value.trim();
+
+  const subject = encodeURIComponent(`Website Inquiry — ${chemical || 'General'} — ${name}`);
+  const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nChemical: ${chemical || 'N/A'}\n\nMessage:\n${message}`);
+  window.location.href = `mailto:manager@brightepic.co.tz,info@brightepic.co.tz,sales@brightepic.co.tz?subject=${subject}&body=${body}`;
+  document.getElementById('formMsg').textContent = '✓ Opening your email app — please hit Send to complete.';
+  e.target.reset();
+});
+
+document.getElementById('productQuoteForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const name = document.getElementById('pqName').value.trim();
+  const email = document.getElementById('pqEmail').value.trim();
+  const phone = document.getElementById('pqPhone').value.trim();
+  const chemical = document.getElementById('pqChemical').value;
+  const message = document.getElementById('pqMessage').value.trim();
+
+  const subject = encodeURIComponent(`Quote Request — ${chemical} — ${name}`);
+  const body = encodeURIComponent(`Product: ${chemical}\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${message}`);
+  window.location.href = `mailto:manager@brightepic.co.tz,info@brightepic.co.tz,sales@brightepic.co.tz?subject=${subject}&body=${body}`;
+  document.getElementById('pqMsg').textContent = '✓ Opening your email app — please hit Send to complete.';
+  e.target.reset();
+  document.getElementById('pqChemical').value = chemical;
+});
+
+/* ============================================================
+   MOBILE MENU
+   ============================================================ */
+const burger = document.getElementById('burger');
+const navLinks = document.getElementById('navLinks');
+burger.addEventListener('click', () => {
+  navLinks.classList.toggle('open');
+  const i = burger.querySelector('i');
+  i.classList.toggle('fa-bars');
+  i.classList.toggle('fa-times');
+});
+navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  navLinks.classList.remove('open');
+  const i = burger.querySelector('i');
+  i.classList.add('fa-bars');
+  i.classList.remove('fa-times');
+}));
+
+/* ============================================================
+   AUTO COPYRIGHT YEAR
+   ============================================================ */
+document.getElementById('copyright').innerHTML = `&copy; ${new Date().getFullYear()} Bright Epic International. All Rights Reserved.`;
+</script>
+
+</body>
+</html>
