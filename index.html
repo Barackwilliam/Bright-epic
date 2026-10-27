@@ -332,7 +332,7 @@
   <div class="nav">
     <div class="brand" onclick="showPage('home')">
       <span class="brand-mark">BE</span>
-      <span class="brand-name">BRIGHT <span>EPIC</span><small>Chemical Supplier</small></span>
+      <span class="brand-name">BRIGHT <span>EPIC</span><small>International Trade</small></span>
     </div>
     <ul id="navLinks">
       <li><a href="#products" onclick="goHome('products');return false;">Products</a></li>
@@ -547,6 +547,11 @@
                   <option>Aluminium Sulphate 25kg</option>
                   <option>Sodium Bicarbonate 25kg</option>
                   <option>Calcium Hypochlorite 45kg</option>
+                  <option>Labsa</option>
+                  <option>Sless</option>
+                  <option>Citric Acid</option>
+                  <option>Potassium</option>
+                  <option>Glycerine</option>
                   <option>Other / Custom</option>
                 </select>
               </div>
@@ -720,7 +725,7 @@
 })();
 
 /* ============================================================
-   PRODUCT DATA (6 unique products)
+   PRODUCT DATA (6 unique products + 5 new products)
    ============================================================ */
 const PRODUCTS = [
   {
@@ -864,6 +869,126 @@ const PRODUCTS = [
       ['Appearance','White / grey granules'],
       ['Available Chlorine','65–70%'],
       ['Packaging','45kg drums'],
+      ['Documentation','COA provided']
+    ]
+  },
+  {
+    id: 'labsa',
+    num: '07',
+    name: 'Labsa',
+    short: 'High-quality linear alkyl benzene sulphonic acid for detergent manufacturing.',
+    lead: 'Labsa (Linear Alkyl Benzene Sulphonic Acid) — a key raw material for the detergent and cleaning industry, supplied with full quality documentation.',
+    desc1: 'Labsa, or Linear Alkyl Benzene Sulphonic Acid, is a major surfactant used in the production of household and industrial detergents. Bright Epic International supplies high-purity Labsa sourced from reliable manufacturers, ensuring consistent quality for your formulations.',
+    desc2: 'Available in standard industrial packaging, Labsa is a viscous liquid that requires careful handling. Bright Epic International delivers with full safety and quality documentation for detergent manufacturers across Tanzania.',
+    image: 'image/labsa.jpeg',
+    pack: '250kg drums',
+    uses: [
+      ['Detergent Manufacturing', 'Primary surfactant in laundry and dishwashing liquids.'],
+      ['Industrial Cleaners', 'Formulation of heavy-duty degreasers and cleaners.'],
+      ['Personal Care', 'Ingredient in soaps and shampoos.'],
+      ['Emulsifiers', 'Stabilising oil-water mixtures in various products.']
+    ],
+    specs: [
+      ['Chemical Name','Linear Alkyl Benzene Sulphonic Acid'],
+      ['Appearance','Viscous brown liquid'],
+      ['Active Matter','≥ 96%'],
+      ['Packaging','250kg drums'],
+      ['Documentation','COA provided']
+    ]
+  },
+  {
+    id: 'sless',
+    num: '08',
+    name: 'Sless',
+    short: 'Sodium Lauryl Ether Sulphate — versatile surfactant for foaming and cleaning.',
+    lead: 'Sless (Sodium Lauryl Ether Sulphate) — a high-foaming anionic surfactant widely used in personal care and household cleaning products.',
+    desc1: 'Sless, also known as Sodium Lauryl Ether Sulphate (SLES), is a popular anionic surfactant valued for its excellent foaming and cleansing properties. Bright Epic International supplies high-quality Sless in concentrated form, suitable for a wide range of applications.',
+    desc2: 'Our Sless is manufactured to high standards and delivered with full documentation. It is a key ingredient in shampoos, body washes, and liquid detergents, and Bright Epic International ensures reliable supply for your production needs.',
+    image: 'image/sles.jpeg',
+    pack: '220kg drums',
+    uses: [
+      ['Personal Care', 'Shampoos, body washes, and facial cleansers.'],
+      ['Household Products', 'Liquid dishwashing and laundry detergents.'],
+      ['Industrial Cleaning', 'Foaming cleaners and degreasers.'],
+      ['Toothpaste', 'Foaming agent in oral care products.']
+    ],
+    specs: [
+      ['Chemical Name','Sodium Lauryl Ether Sulphate'],
+      ['Appearance','Clear to slightly hazy viscous liquid'],
+      ['Active Matter','≥ 70%'],
+      ['Packaging','220kg drums'],
+      ['Documentation','COA provided']
+    ]
+  },
+  {
+    id: 'citric-acid',
+    num: '09',
+    name: 'Citric Acid',
+    short: 'Versatile organic acid for food, cleaning, and industrial applications.',
+    lead: 'Citric Acid — a naturally occurring organic acid used widely in food and beverage, cleaning, and pharmaceutical industries.',
+    desc1: 'Citric Acid (C₆H₈O₇) is a weak organic acid found naturally in citrus fruits. It is extensively used as a pH adjuster, preservative, and cleaning agent. Bright Epic International supplies high-purity citric acid in both anhydrous and monohydrate forms.',
+    desc2: 'Our citric acid is food-grade and industrial-grade, sourced from reputable manufacturers and delivered with complete documentation. Ideal for a broad spectrum of applications, from effervescent tablets to eco-friendly cleaning products.',
+    image: 'image/citric.jpeg',
+    pack: '25kg bags',
+    uses: [
+      ['Food & Beverage', 'Acidulant and preservative in soft drinks and foods.'],
+      ['Cleaning Products', 'Descaling agent in household and industrial cleaners.'],
+      ['Pharmaceuticals', 'pH adjustment and chelating agent in formulations.'],
+      ['Cosmetics', 'pH balancer in skincare and hair care products.']
+    ],
+    specs: [
+      ['Chemical Formula','C₆H₈O₇'],
+      ['Appearance','White crystalline powder'],
+      ['Purity','≥ 99.5%'],
+      ['Packaging','25kg bags'],
+      ['Documentation','COA provided']
+    ]
+  },
+  {
+    id: 'potassium',
+    num: '10',
+    name: 'Potassium',
+    short: 'Potassium-based chemicals for agriculture, industry, and manufacturing.',
+    lead: 'Potassium chemicals — including potassium hydroxide and potassium chloride — essential for fertilisers, soaps, and industrial processes.',
+    desc1: 'Potassium compounds are vital across many industries. Potassium Hydroxide (KOH) is used in soap making and as an electrolyte, while Potassium Chloride (KCl) is a key fertiliser ingredient. Bright Epic International supplies various potassium-based chemicals with full quality assurance.',
+    desc2: 'Our potassium products are sourced from trusted global suppliers and delivered in safe, compliant packaging. Whether for agricultural or industrial use, Bright Epic International ensures you receive the right grade for your needs.',
+    image: 'image/sorbate.jpeg',
+    pack: '25kg / 50kg bags or drums',
+    uses: [
+      ['Fertiliser Production', 'Potassium chloride as a source of potassium nutrient.'],
+      ['Soap Manufacturing', 'Potassium hydroxide for liquid soaps.'],
+      ['Chemical Industry', 'Electrolyte in batteries and pH regulation.'],
+      ['Food Additive', 'Potassium salts as preservatives and flavor enhancers.']
+    ],
+    specs: [
+      ['Chemical Name','Potassium Hydroxide / Potassium Chloride'],
+      ['Appearance','White flakes / crystalline solid'],
+      ['Purity','Varies by product (≥ 90%)'],
+      ['Packaging','25kg bags, 50kg drums'],
+      ['Documentation','COA provided']
+    ]
+  },
+  {
+    id: 'glycerine',
+    num: '11',
+    name: 'Glycerine',
+    short: 'High-purity glycerine for pharmaceuticals, personal care, and industrial use.',
+    lead: 'Refined Glycerine — a versatile, colorless, and odorless liquid used in pharmaceuticals, cosmetics, and numerous industrial applications.',
+    desc1: 'Glycerine (also known as glycerol) is a sugar alcohol widely used as a humectant, solvent, and sweetener. Bright Epic International supplies refined glycerine with high purity, suitable for pharmaceutical, food, and cosmetic applications.',
+    desc2: 'Our glycerine is sourced from certified producers and delivered in secure, tamper-evident containers. Its moisturizing properties make it a staple in personal care formulations, while its stability benefits many industrial processes.',
+    image: 'image/vegetable.jpeg',
+    pack: '250kg drums',
+    uses: [
+      ['Pharmaceuticals', 'Humectant in cough syrups and topical medicines.'],
+      ['Personal Care', 'Moisturizer in lotions, creams, and soaps.'],
+      ['Food Industry', 'Solvent and sweetener in food products.'],
+      ['Industrial', 'Plasticizer and antifreeze component.']
+    ],
+    specs: [
+      ['Chemical Name','Glycerol (Glycerine)'],
+      ['Appearance','Clear, colorless viscous liquid'],
+      ['Purity','≥ 99.5% (refined)'],
+      ['Packaging','250kg drums'],
       ['Documentation','COA provided']
     ]
   }
